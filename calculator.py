@@ -1,5 +1,6 @@
 # import module
 import tkinter as tk
+from widgets import ReadOnlyText
 
 # create object
 root = tk.Tk()
@@ -9,7 +10,7 @@ root.minsize(300, 300)
 
 
 # specify text field
-text_result = tk.Text(root, height=2, width=16, font=["Arial", 24])
+text_result = ReadOnlyText(root, height=2, width=16, font=["Arial", 24])
 text_result.grid(column=0, columnspan=4, sticky="NSEW")
 
 
