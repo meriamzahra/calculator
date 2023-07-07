@@ -4,8 +4,8 @@ import tkinter as tk
 # create object
 root = tk.Tk()
 
-# adjust size
-root.geometry("300x300")
+# setting the minimum size of the root window
+root.minsize(300, 300)
 
 
 # specify text field
