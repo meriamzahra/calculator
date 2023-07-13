@@ -15,13 +15,13 @@ text_result.grid(column=0, columnspan=4, sticky="NSEW")
 
 
 # specify grid
-tk.Button.rowconfigure(root, 0, weight=1)
-tk.Button.rowconfigure(root, 1, weight=1)
-tk.Button.rowconfigure(root, 2, weight=1)
-tk.Button.rowconfigure(root, 3, weight=1)
-tk.Button.rowconfigure(root, 4, weight=1)
-tk.Button.rowconfigure(root, 5, weight=1)
-tk.Button.columnconfigure(root, "all", weight=1)
+tk.Widget.rowconfigure(root, 0, weight=1)
+tk.Widget.rowconfigure(root, 1, weight=1)
+tk.Widget.rowconfigure(root, 2, weight=1)
+tk.Widget.rowconfigure(root, 3, weight=1)
+tk.Widget.rowconfigure(root, 4, weight=1)
+tk.Widget.rowconfigure(root, 5, weight=1)
+tk.Widget.columnconfigure(root, "all", weight=1)
 
 
 # initialise variables
@@ -89,7 +89,7 @@ btn_right_parentheses = tk.Button(root, text=")", command=lambda: add_to_calcula
 btn_right_parentheses.grid(row=4, column=2, sticky="NSEW")
 btn_equals = tk.Button(root, text="=", command=lambda: evaluate_calculation(), font=[14], width=12)
 btn_equals.grid(row=5, column=2, columnspan=2, sticky="NSEW")
-btn_clear = tk.Button(root, text="C", command=clear_field, font=[14], width=12)
+btn_clear = tk.Button(root, text="C", command=lambda: clear_field(), font=[14], width=12)
 btn_clear.grid(row=5, column=0, columnspan=2, sticky="NSEW")
 
 
