@@ -5,7 +5,9 @@ from widgets import ReadOnlyText
 # create object
 root = tk.Tk()
 
-# setting the minimum size of the root window
+# root window properties
+root.title("Calculator")
+root.iconphoto(False, tk.PhotoImage(file="icons/calculator.png"))
 root.minsize(300, 300)
 
 
