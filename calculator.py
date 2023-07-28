@@ -7,7 +7,7 @@ root = tk.Tk()
 
 # root window properties
 root.title("Calculator")
-root.iconphoto(False, tk.PhotoImage(file="icons/calculator.png"))
+root.iconbitmap("calculator.ico")
 root.minsize(300, 300)
 
 
